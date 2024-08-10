@@ -101,10 +101,10 @@ public class ProdutosController : ControllerBase
     {
         try
         {
-            var url = $"{id}"; // append the id to the base address set in the HttpClient
+            var url = $"{id}"; 
 
             var request = new HttpRequestMessage(HttpMethod.Get, url);
-            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", "APP_USR-6500094978999069-070307-c0edc088225a328a3aae3522dd720a9d-1855456057");
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", "a chave token sera colocada aqui");
 
             var response = await _httpClient.SendAsync(request);
 
